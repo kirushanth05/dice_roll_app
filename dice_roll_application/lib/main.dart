@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
 
-void divideTwoNumbers(double numberOne, double numberTwo) {
-  double ans = numberOne / numberTwo;
-  print(ans);
+void main() {
+  runApp(MaterialApp(
+    home: HelloWorldApp(),
+  ));
 }
 
-void main() {
-  divideTwoNumbers(10.5, 5.5);
+class HelloWorldApp extends StatelessWidget {
+  const HelloWorldApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('This is my App Bar!'),
+        backgroundColor: Colors.blue.shade400,
+      ),
+    );
+  }
 }
