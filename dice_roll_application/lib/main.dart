@@ -33,7 +33,7 @@ class DiceRollApp extends StatelessWidget {
               ),
               Container(
                 height: 51,
-                width: 298,
+                width: MediaQuery.of(context).size.width * 0.7,
                 decoration: BoxDecoration(
                     color: Color.fromARGB(255, 29, 46, 29),
                     borderRadius: BorderRadius.circular(12.0)),
